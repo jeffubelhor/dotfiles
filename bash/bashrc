@@ -1,0 +1,19 @@
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.6
+
+export WORKON_HOME=$HOME/Envs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+PATH=/usr/local/share/npm/bin:$PATH
+PATH=/Users/jubelhor/usr/local/bin:$PATH
+PATH=/usr/local/bin:$PATH
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+
+source ~/.local/bin/bashmarks.sh
+
+
+# Adds aliases from .aliases file to bash
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
