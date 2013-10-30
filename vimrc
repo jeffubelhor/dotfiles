@@ -23,7 +23,7 @@ set wildmode=list:longest,full
 "Turns off HTML link highlighting
 hi link htmlLink NONE
 
-"Turns on mouse capabilities (Requires SIMBL and MouseTerm on OS X)
+"Turns on mouse capabilities (Requires EasySIMBL and MouseTerm on OS X)
 set mouse=a
 
 "Maps .less syntax
@@ -53,7 +53,7 @@ augroup END
 nmap <Leader>nt :NERDTreeToggle<Cr>
 
 "Opens NERDTree with every new vim instance
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 "closes vim if the only open window is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
