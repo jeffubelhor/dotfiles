@@ -58,3 +58,6 @@ nmap <Leader>nt :NERDTreeToggle<Cr>
 "closes vim if the only open window is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+"Allows me to use ctrl+c to copy to the OS X clipboard. I KNOW I'M DOING IT WRONG
+vmap <C-c> :w !pbcopy<ENTER><ENTER> 
+
