@@ -1,3 +1,5 @@
+
+
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
 alias ...="cd ../.."
@@ -133,3 +135,28 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 # Kill all the tabs in Chrome to free up memory
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+
+#Grep shortcuts including my standard arguments
+alias ge="grep -rIne" 
+
+# Due to my inability to context switch, I'm adding ":q" as an alternative to "cd .."
+alias :q="cd .."
+
+####Local Application Commands
+
+# These are some commands for the Spotify CLI (Shpotify)
+
+alias sp="spotify play"
+alias ss="spotify pause"
+alias nx="spotify next"
+alias pv="spotify prev"
+alias vl="spotify vol down"
+alias vu="spotify vol up"
+
+# Alien feed (add subreddit name afterwards) 
+alias af="alienfeed"
+
+#Sets up cmatrix as screensaver
+alias sc="cmatrix -s -C blue"
+
+alias sudo="nocorrect sudo"
